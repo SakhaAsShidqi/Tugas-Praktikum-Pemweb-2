@@ -77,15 +77,15 @@
                         <label class="col-4">Pilih Produk</label> 
                         <div class="col-8">
                             <div class="custom-control custom-radio custom-control-inline">
-                                <input name="produk" id="produk_0" type="radio" class="custom-control-input" value="TV" required="required"> 
+                                <input name="produk" id="produk_0" type="radio" class="custom-control-input" value="PISANG" required="required"> 
                                 <label for="produk_0" class="custom-control-label">PISANG</label>
                             </div>
                             <div class="custom-control custom-radio custom-control-inline">
-                                <input name="produk" id="produk_1" type="radio" class="custom-control-input" value="KULKAS" required="required"> 
+                                <input name="produk" id="produk_1" type="radio" class="custom-control-input" value="APEL" required="required"> 
                                 <label for="produk_1" class="custom-control-label">APEL</label>
                             </div>
                             <div class="custom-control custom-radio custom-control-inline">
-                                <input name="produk" id="produk_2" type="radio" class="custom-control-input" value="MESIN CUCI" required="required"> 
+                                <input name="produk" id="produk_2" type="radio" class="custom-control-input" value="MELON" required="required"> 
                                 <label for="produk_2" class="custom-control-label">MELON</label>
                             </div>
                         </div>
@@ -122,9 +122,9 @@
         $name = $_POST['name'];
         $produk = $_POST['produk'];
         $jumlah = $_POST['jumlah'];
-        $kulkas = 3100000 * $jumlah;
-        $TV = 4200000 * $jumlah;
-        $mesin_cuci = 3800000 * $jumlah;
+        $PISANG = 15000 * $jumlah;
+        $APEL = 25000 * $jumlah;
+        $MELON = 30000 * $jumlah;
 
         echo "<br>Nama Customer : " . $name;
         echo "<br>Produk Pilihan : " . $produk;
@@ -132,13 +132,13 @@
 
         switch ($produk) {
             case "PISANG" : 
-                echo "<br>Total Belanja : " . $kulkas;
+                echo "<br>Total Belanja : " . $PISANG;
                 break;
             case "APEL" : 
-                echo "<br>Total Belanja : " . $TV;
+                echo "<br>Total Belanja : " . $APEL;
                 break;
             case "MELON" : 
-                echo "<br>Total Belanja : " . $mesin_cuci;
+                echo "<br>Total Belanja : " . $MELON;
                 break;
         }
     }
